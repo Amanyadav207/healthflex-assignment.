@@ -50,8 +50,8 @@ const Comment = ({ comment, onEdit, onDelete, onReply, onEditReply, onDeleteRepl
             onChange={(e) => setEditText(e.target.value)}
             style={styles.input}
           />
-          <button  onClick={handleEdit} style={styles.saveButton}>Save</button>
-          <button style={styles.cancelButton} onClick={() => setIsEditing(false)}>Cancel</button>
+          <button  onClick={handleEdit} style={styles.actionButton}>Save</button>
+          <button style={styles.actionButton} onClick={() => setIsEditing(false)}>Cancel</button>
         </div>
       ) : (
         <p style={styles.commentText}>{comment.text}</p>
